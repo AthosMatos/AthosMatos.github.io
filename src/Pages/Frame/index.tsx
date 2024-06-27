@@ -1,6 +1,6 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import { Toaster } from 'react-hot-toast'
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import styles from './Frame.module.css'
 
 const imgUrl =
@@ -8,27 +8,30 @@ const imgUrl =
 
 const Frame = () => {
     const nav = useNavigate()
-
+    const location = useLocation()
     return (
         <div className={styles.back}>
-            <Toaster position="top-center" reverseOrder={false} />
+            <Toaster
+                toastOptions={{
+                    style: {
+                        fontSize: 'clamp(0.8rem, 3.5vw, 1rem)',
+                    },
+                }}
+                position="top-center"
+                reverseOrder={false}
+            />
             <div className={styles['img-wrapper']}>
                 <img src={imgUrl} className={styles.img} alt="logo" />
             </div>
             <div className={styles.outlet}>
-                <div
+                <ArrowBackIcon
                     onClick={() => {
-                        nav(-1)
+                        if (location.pathname === '/login') nav('/')
+                        else nav(-1)
                     }}
-                    className={styles['icon-wrapper']}
-                >
-                    <ArrowBackIcon
-                        className={styles.Micon}
-                        style={{
-                            fontSize: '28px',
-                        }}
-                    />
-                </div>
+                    className={styles.Micon}
+                />
+
                 <Outlet />
             </div>
         </div>

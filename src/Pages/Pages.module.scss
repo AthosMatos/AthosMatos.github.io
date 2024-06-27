@@ -1,3 +1,16 @@
+.title {
+    font-size: clamp(1.4rem, 6.5vw, 1.7rem);
+    color: var(--color-title);
+}
+.subtitle {
+    font-size: clamp(0.8rem, 3.5vw, 1rem);
+    color: var(--color-subTitle);
+
+    .acc {
+        margin-top: clamp(0.5rem, 2.5vw, 0.8rem);
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -16,21 +29,13 @@
     gap: 10px;
 }
 
-.title {
-    font-size: 1.8rem;
-    color: var(--color-title);
-}
-.subtitle {
-    font-size: 1rem;
-    color: var(--color-subTitle);
-}
 .subtitle--wrapper {
     display: flex;
     gap: 3px;
     flex-direction: column;
 }
 .forgot {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 3.5vw, 1rem);
     color: var(--color-action);
     cursor: pointer;
     align-self: center;

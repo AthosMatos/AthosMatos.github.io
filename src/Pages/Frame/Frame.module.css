@@ -27,34 +27,23 @@
 .outlet {
     display: flex;
     flex-direction: column;
-    margin-top: 8vh;
+    margin-top: clamp(20px, 8vh, 80px);
     position: absolute;
-    gap: 40px;
-    width: calc(100% - 18vw);
-    max-width: 360px;
-    height: calc(100% - 14vh);
+    gap: clamp(20px, 3vh, 40px);
+    width: clamp(200px, 86vw, 400px);
+    height: calc(100vh - clamp(20px, 12vh, 150px));
 }
 
 .Micon {
     color: white;
-}
-
-.icon-wrapper {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
     background-color: var(--color-grey-normal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;
+    padding: clamp(1px, 4vw, 4px);
+    font-size: clamp(18px, 8vw, 24px);
+
     cursor: pointer;
 
-    transition: background-color 0.3s;
-
     &:hover {
-        background-color: var(--color-grey-dark);
-    }
-    &:active {
         background-color: var(--color-grey-dark);
     }
 }

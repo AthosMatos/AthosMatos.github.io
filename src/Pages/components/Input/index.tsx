@@ -41,20 +41,21 @@ const Input = ({ value, onChange, type, label, placeholder, error }: InputProps)
                     onChange={(e) => onChange(e.target.value)}
                 />
             </div>
-            {type == 'password' && (
+            {
                 <div
                     className={styles['icon-wrapper']}
                     onClick={() => {
                         setHidden(!hidden)
                     }}
                 >
-                    {!hidden ? (
-                        <VisibilityIcon className={styles.visibility} />
-                    ) : (
-                        <VisibilityOffIcon className={styles.visibility} />
-                    )}
+                    {type === 'password' &&
+                        (!hidden ? (
+                            <VisibilityIcon className={styles.visibility} />
+                        ) : (
+                            <VisibilityOffIcon className={styles.visibility} />
+                        ))}
                 </div>
-            )}
+            }
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import Input from '../components/Input'
 import SocialsCards from '../components/SocialsCards'
-import styles from './SignIn.module.css'
+import styles from '../Pages.module.scss'
 import useSignIn from './useSignIn'
 
 const SignIn = () => {
@@ -52,8 +52,8 @@ const SignIn = () => {
             <div className={styles.socials}>
                 <p className={styles.subtitle}>Or Register with Social Accounts</p>
                 <SocialsCards />
-                <p className={styles.subtitle} style={{ marginTop: '12px' }}>
-                    Already have an account?
+                <p className={styles.subtitle}>
+                    Already have an account?{' '}
                     <a onClick={goToLogin} className={styles.forgot}>
                         Login Now
                     </a>

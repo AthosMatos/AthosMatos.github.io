@@ -7,7 +7,7 @@ import SignIn from './Pages/SignIn'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path="/" element={<Frame />}>
                 <Route index element={<Navigate to="/login" />} />

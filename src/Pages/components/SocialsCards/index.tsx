@@ -5,20 +5,20 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import styles from './SocilasCards.module.css'
 
 const SocialsCards = () => {
-    const fontSizes = '34px'
+    const fontSizes = 'clamp(12px, 8vh, 32px)'
     return (
         <div className={styles.wrapper}>
             <div className={styles.Card}>
-                <GoogleIcon style={{ fontSize: fontSizes }} className={styles['icon--google']} />
+                <GoogleIcon style={{ fontSize: fontSizes }} className={styles['icon-google']} />
             </div>
             <div className={styles.Card}>
-                <FacebookIcon style={{ fontSize: fontSizes }} className={styles['icon--facebook']} />
+                <FacebookIcon style={{ fontSize: fontSizes }} className={styles['icon-facebook']} />
             </div>
             <div className={styles.Card}>
-                <AppleIcon style={{ fontSize: fontSizes }} className={styles['icon--apple']} />
+                <AppleIcon style={{ fontSize: fontSizes }} className={styles['icon-apple']} />
             </div>
             <div className={styles.Card}>
-                <TwitterIcon style={{ fontSize: fontSizes }} className={styles['icon--twitter']} />
+                <TwitterIcon style={{ fontSize: fontSizes }} className={styles['icon-twitter']} />
             </div>
         </div>
     )

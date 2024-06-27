@@ -3,7 +3,7 @@
     flex-direction: row;
     outline: 1px solid var(--color-grey-border);
     border-radius: 10px;
-    padding: 18px 0px;
+    padding: clamp(10px, 2vh, 20px) 0px;
     align-items: center;
     transition: outline 0.4s;
 }
@@ -12,7 +12,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 62px;
+    /* width: clamp(50px, 10vw, 70px); */
+    flex: 1;
 }
 input::-ms-reveal,
 input::-ms-clear {
@@ -26,7 +27,7 @@ input::-ms-clear {
 }
 
 .label {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     color: var(--color-title);
 }
 
@@ -38,14 +39,14 @@ input::-ms-clear {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    flex: 2;
+    flex: 3;
     /* width: 80%; */
 }
 
 .input {
     border: none;
 
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     color: var(--color-subTitle);
     background-color: transparent;
     outline: none;

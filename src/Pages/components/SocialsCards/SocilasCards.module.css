@@ -12,8 +12,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    padding: 22px;
+    padding: clamp(15px, 5vw, 22px);
     transition: all 0.3s;
     cursor: pointer;
     &:hover {
@@ -22,18 +21,18 @@
     }
 }
 
-.icon--facebook {
+.icon-facebook {
     color: #1877f2;
 }
 
-.icon--twitter {
+.icon-twitter {
     color: #1da1f2;
 }
 
-.icon--google {
+.icon-google {
     color: #ff3d00;
 }
 
-.icon--apple {
+.icon-apple {
     color: #000000;
 }
