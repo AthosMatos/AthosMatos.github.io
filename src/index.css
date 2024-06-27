@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Tenor_Sans';
+    src: url('./fonts/Tenor_Sans/TenorSans-Regular.ttf') format('truetype');
+    /* Add additional font formats if necessary */
+    /* Specify the correct path to the font files */
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif, 'Tenor_Sans';
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace, 'Tenor_Sans';
+}
+
+/* default font Tenor_Sans */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+li,
+ul,
+ol,
+dl,
+dt,
+dd,
+blockquote,
+pre,
+code,
+input,
+textarea,
+button {
+    font-family: 'Tenor_Sans';
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+}
+
+:root {
+    --color-title: rgba(32, 19, 11, 1);
+    --color-subTitle: rgba(139, 139, 139, 1);
+    --color-grey-border: rgba(233, 236, 239, 1);
+    --color-grey-dark: rgb(104, 104, 104);
+    --color-grey-normal: rgba(139, 139, 139, 1);
+    --color-grey-light: rgba(204, 204, 204, 1);
+    --color-action: rgba(188, 131, 99, 1);
+    --color-action-dark: rgba(160, 112, 84, 1);
+}

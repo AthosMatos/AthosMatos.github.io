@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 22px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.icon--facebook {
+    color: #1877f2;
+}
+
+.icon--twitter {
+    color: #1da1f2;
+}
+
+.icon--google {
+    color: #ff3d00;
+}
+
+.icon--apple {
+    color: #000000;
+}
