@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/LoginReact/static/css/main.246035ed.css",
-    "main.js": "/LoginReact/static/js/main.ea4812cb.js",
+    "main.js": "/LoginReact/static/js/main.a9f839a4.js",
     "static/media/TenorSans-Regular.ttf": "/LoginReact/static/media/TenorSans-Regular.0d22289d38b3d37f95b6.ttf",
     "index.html": "/LoginReact/index.html",
     "main.246035ed.css.map": "/LoginReact/static/css/main.246035ed.css.map",
-    "main.ea4812cb.js.map": "/LoginReact/static/js/main.ea4812cb.js.map"
+    "main.a9f839a4.js.map": "/LoginReact/static/js/main.a9f839a4.js.map"
   },
   "entrypoints": [
     "static/css/main.246035ed.css",
-    "static/js/main.ea4812cb.js"
+    "static/js/main.a9f839a4.js"
   ]
 }
